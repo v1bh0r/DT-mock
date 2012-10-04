@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+
+/* CSS for logo*/
+.logo{
+    height: 50px;
+    background-color: #D2D3D5;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #D2D3D5 -webkit-gradient(linear, left top, left bottom, from(#D2D3D5), to(#F0F0F2)) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #D2D3D5 -moz-linear-gradient(top, #D2D3D5, #F0F0F2) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D2D3D5, endColorstr=#F0F0F2) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D2D3D5, endColorstr=#F0F0F2)" no-repeat;
+}
+
+/* CSS for nav top*/
+.nav_top{
+    background-color: #474749;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #474749 -webkit-gradient(linear, left top, left bottom, from(#474749), to(#949599 )) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #474749 -moz-linear-gradient(top, #474749, #949599 ) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#474749, endColorstr=#949599 ) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#474749, endColorstr=#949599 )" no-repeat;
+}
+
+.nav li a {
+    text-shadow: 0 1px 0 #3B3A3B !important;
+    color: #3B3A3B !important;
+}
+.nav li {
+    display: inline;
+}
+
+.nav > li > a:hover, .nav > li > a:active {
+    color: white !important;
+    text-decoration: none;
+}
+
+.dropdown-toggle .caret{border-top-color: white !important;
+                        border-bottom-color: white !important;  }
+
+.nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: transparent;
+}
+body {
+    background-color: #D0D2D3 !important;
+}
+/*.container .row {
+    width: 976px;
+  }*/
+
+/* Background Gradient for FOOTER Colors (#f0f0f1)*/
+.footer_gradient
+{
+    background-color: #f0f0f1;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #FFFFFF -webkit-gradient(linear, left top, left bottom, from(#f0f0f1), to(#FFFFFF)) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #FFFFFF -moz-linear-gradient(top, #f0f0f1, #FFFFFF) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f0f0f1, endColorstr=#FFFFFF) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E9E9E8, endColorstr=#E9E9E8)" no-repeat;
+}
+footer > .breadcrumb > li > a {
+    float: left;
+    text-decoration: none;}
+
+.caret{border-top-color: #A6A7AA !important;
+       border-bottom-color: #A6A7AA !important;  }
+
+.icon-search {
+    float: right;
+    position: relative;
+    right: 20px;
+    top: 6px;
+    color: #818285;
+}

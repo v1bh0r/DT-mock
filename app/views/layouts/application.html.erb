@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Dealtraction" %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= stylesheet_link_tag "bootstrap", :media => "all" %>
+  </head>
+  <body style="overflow: scroll;min-width: 1170px">
+    <div class="logo" style="padding-left: 5%"> 
+        <a href="">
+          <img alt="Logo" src="/assets/logo-152x30.png" style="margin-top: 10px;"/>
+        </a>  
+      
+    </div>
+
+    <div class="navbar">
+      <div class="container nav_top"  style="-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;">     
+        <ul class="nav" style="padding-left: 5%">
+            <li><%= link_to "Home", "/home/index" %></li>
+            <li><div style="position: relative;padding-top: 10px;">
+                <span><%= link_to "Reminders", "/home/index"  %></span>
+                <span  style="color: white;background-color: #E61A22;padding-bottom: 12px;">20</span>
+              </div>
+            </li>
+
+            <li><%= link_to "Filters", "/home/index"  %></li>
+            <li><%= link_to "Network", "/home/index"  %></li>
+            <li><%= link_to "Profile", "/home/index"  %></li>
+          </ul>
+        <ul class="nav pull-right" style="padding-right: 5%">
+            <li class="dropdown" >
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#" style="color: white !important;">
+                <b class="caret"></b>&nbsp;
+                Aastha Tangri
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" style="text-decoration: none;list-style: none;color: white !important;">Add Connection</a>
+            </li>    
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div> <!-- /container -->
+    <footer style="margin-bottom: 0;height: 125px;" class="footer_gradient">
+      <ul class="breadcrumb" style="padding:50px 50px 0px 50px;">
+        <li style="float: left;text-decoration: none"><%= link_to "About", ""  %><span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+        <li style="float: left;"><%= link_to "News", ""  %><span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+        <li style="float: left;"><%= link_to "Blog", ""  %><span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+        <li style="float: left;"><%= link_to "Benefits", ""  %><span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+        <li style="float: left;"><%= link_to "Partner", ""  %><span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+        <li style="float: left;"><%= link_to "Developers", ""  %><span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+        <li style="float: left;"><%= link_to "Mobile", ""  %><span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+        <li style="float: left;"><%= link_to "Contact Us", ""  %><span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+        <li style="float: left;"><%= link_to "Jobs", ""  %><span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+        <br><br>
+        <li style="float: left;color: #98999B">DEALtraction &copy; 2012<span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+        <li style="float: left;"><%= link_to "User Agreement", ""  %><span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+        <li style="float: left;"><%= link_to "Privacy Policy", ""  %><span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+        <li style="float: left;"><%= link_to "Copyright Policy", ""  %><span style="padding-left: 20px;padding-right: 20px;">|</span></li>
+      </ul>
+    </footer>
+    <%= javascript_include_tag "application" %>
+
+  </body>
+</html>
