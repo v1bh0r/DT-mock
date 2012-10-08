@@ -12,10 +12,14 @@
  *= require_tree .
 */
 
+body {
+    background-color: #D0D2D3 !important;
+    min-width: 1170px;
+}
 
-/* CSS for logo*/
 .logo{
-    height: 50px;
+    padding-top: 7px;
+    height: 43px;
     background-color: #D2D3D5;
     /* For WebKit (Safari, Chrome, etc) */
     background: #D2D3D5 -webkit-gradient(linear, left top, left bottom, from(#D2D3D5), to(#F0F0F2)) no-repeat;
@@ -27,8 +31,19 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D2D3D5, endColorstr=#F0F0F2)" no-repeat;
 }
 
-/* CSS for nav top*/
+.logo .container, .navbar .nav_top .container, body .container {
+    width: 995px;
+}
+
+body .navbar {
+    margin-bottom: 15px;
+}
+
 .nav_top{
+    text-align: center; 
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0; 
+    border-radius: 0;
     background-color: #474749;
     /* For WebKit (Safari, Chrome, etc) */
     background: #474749 -webkit-gradient(linear, left top, left bottom, from(#474749), to(#949599 )) no-repeat;
@@ -40,56 +55,82 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#474749, endColorstr=#949599 )" no-repeat;
 }
 
-.nav li a {
-    text-shadow: 0 1px 0 #3B3A3B !important;
-    color: #3B3A3B !important;
+.reminder-count {
+    color: white;
+    background-color: #E61A22;
+    padding-bottom: 12px;
 }
-.nav li {
-    display: inline;
+.navbar .nav_top .container .nav > li > a {
+    padding: 10px 15px 10px 0;
+    color: #3B3A3B;
+    text-shadow: 0 1px 0 #3B3A3B;
 }
-
-.nav > li > a:hover, .nav > li > a:active {
-    color: white !important;
+.navbar .nav_top .container .nav > li > a:focus,
+.navbar .nav_top .container .nav > li > a:hover {
+    color: white;
     text-decoration: none;
 }
-
-.dropdown-toggle .caret{border-top-color: white !important;
-                        border-bottom-color: white !important;  }
-
-.nav li.dropdown.open.active > .dropdown-toggle {
+.navbar .nav_top .container .nav > .active > a,
+.navbar .nav_top .container .nav > .active > a:hover,
+.navbar .nav_top .container .nav > .active > a:focus {
+    color: white;
+    text-decoration: none;
     background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
-body {
-    background-color: #D0D2D3 !important;
-}
-/*.container .row {
-    width: 976px;
-  }*/
 
-/* Background Gradient for FOOTER Colors (#f0f0f1)*/
-.footer_gradient
-{
-    background-color: #f0f0f1;
-    /* For WebKit (Safari, Chrome, etc) */
-    background: #FFFFFF -webkit-gradient(linear, left top, left bottom, from(#f0f0f1), to(#FFFFFF)) no-repeat;
-    /* Mozilla,Firefox/Gecko */
-    background: #FFFFFF -moz-linear-gradient(top, #f0f0f1, #FFFFFF) no-repeat;
-    /* IE 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f0f0f1, endColorstr=#FFFFFF) no-repeat;
-    /* IE 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E9E9E8, endColorstr=#E9E9E8)" no-repeat;
+.dropdown .dropdown-menu li > a:hover, 
+.dropdown .dropdown-menu li > a:focus{
+    background-color: #474749;
+    background-image: -moz-linear-gradient(top, #747577, #474749);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#747577), to(#474749));
+    background-image: -webkit-linear-gradient(top, #747577, #474749);
+    background-image: -o-linear-gradient(top, #747577, #474749);
+    background-image: linear-gradient(to bottom, #747577, #474749);
 }
-footer > .breadcrumb > li > a {
+/*.navbar .nav_top .container .nav > li > a:active {
+  color: white;
+  text-decoration: none;
+}*/
+.navbar .nav_top .container .pull-right {
+    padding-right: 10px;
+}
+
+.navbar .nav_top .container .pull-right > li > a {
+    color: white;
+}
+
+.navbar .nav_top .container .pull-right .dropdown.open > .dropdown-toggle {
+    color: white;
+    background-color: #474749;
+}
+
+.dropdown-toggle .caret{
+    border-top-color: white !important;
+    border-bottom-color: white !important;  
+}
+
+/* CSS for footer */
+footer {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+footer .container > ul {
+    list-style: none;
+    padding-top: 50px;
+    padding-bottom: 67px;
+    margin-left: 0px;
+}
+footer .container > ul > li {
     float: left;
-    text-decoration: none;}
-
-.caret{border-top-color: #A6A7AA !important;
-       border-bottom-color: #A6A7AA !important;  }
-
-.icon-search {
-    float: right;
-    position: relative;
-    right: 20px;
-    top: 6px;
-    color: #818285;
+}
+footer .container > ul > li > a{
+    text-decoration: none;
+}
+footer .container > ul > li > span {
+    padding-left: 15px;
+    padding-right: 15px;
 }

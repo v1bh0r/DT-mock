@@ -14,3 +14,15 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+$('#company_show_info').click(function(){
+    $('#company_show_info').hide();
+    $('#company_hide_info').show();
+    $('#company_detail').slideToggle();
+});
+
+$('#company_hide_info').click(function(){
+    $('#company_show_info').show();
+    $('#company_hide_info').hide();
+    $('#company_detail').slideToggle();
+});

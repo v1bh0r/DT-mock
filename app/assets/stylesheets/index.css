@@ -1,0 +1,238 @@
+/* 
+    Document   : index
+    Created on : 8 Oct, 2012, 3:26:58 PM
+    Author     : aastha
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.span9 {
+    background-color: white;
+    width: 698px;  
+}
+.span9 .hero-unit {
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0; 
+    border-radius: 0;
+    margin: 10px;
+    padding: 10px;
+}
+
+.alert_header_info{
+    position: relative;
+    float: left;
+    margin-left: 30px
+}
+
+.alert_header_info > span > img{
+    height: 34px;
+    width: 34px;
+}
+
+.alert_header_info_ondate{
+    position: absolute;
+    padding-left: 5px
+}
+
+.alert_header_info_ondate > span{
+    font-size: 16px;
+    color:#1B75BB;
+    font-weight: bold 
+}
+
+.alert_header_info_ondate .alert_date{
+    font-size: 13px;
+    color: #8C8D8F;
+    font-weight: normal
+}
+
+.row .pull-left > ul{
+    list-style: none;
+    color: #969594;
+    font-size: 18px
+}
+
+.row .pull-left .lhs_summary{
+    font-weight: bold
+}
+
+
+.vertical_divider{
+    border-left: 1px solid #bcbdbf;
+    padding: 2px;
+    height: 60px;
+    width: 1px;
+    float: left;
+    margin-left: 20px
+}
+
+.caret{border-top-color: #A6A7AA !important;
+       border-bottom-color: #A6A7AA !important;  }
+
+.input-prepend {
+    margin-top: 25px;
+}
+
+.input-prepend button {
+    width: 30px;
+}
+.input-prepend button .icon-search {
+    margin-left: -6px;
+}
+.input-prepend input {
+    width: 180px;   
+}
+
+.top-shadow {
+    -moz-box-shadow: 0px 3px 4px lightgray;
+    -webkit-box-shadow: inset 0px 3px 4px lightgray;
+    box-shadow: inset 0px 3px 4px lightgray;
+}
+.span3 .navbar-search .icon-search {
+    float: right;
+    position: relative;
+    right: 20px;
+    top: 6px;
+    color: #818285;
+}
+
+
+.alert_frequency {
+    border-bottom:3px solid lightgray;
+    margin-bottom: 20px;
+}
+.alert_frequency h2 {
+    color: #5A5B5D; 
+    padding-left: 20px; 
+    padding-top: 10px;
+}
+.alert_frequency h2 span {
+    font-size:14px;
+}
+.alert_frequency .caret {
+    vertical-align: middle;
+}
+
+
+
+.alert_detail {
+    height: 175px;
+    border-bottom:1px solid lightgray;
+    margin-bottom: 20px;
+}
+.alert_detail .alert_time {
+    padding-right: 10px;
+    color: #8C8D8F;
+    float: right;
+}
+
+.content_heading {
+    font-size: 18px;
+    color: #8C8D8F; 
+    padding-left: 20px;
+}
+.news {
+    font-size: 18px;
+    color: #5d5e60; 
+    padding-left: 20px;
+    font-weight: bold;
+}
+.news_alert {
+    font-size: 18px;
+    color: #1B75BB;
+    display: inline;
+    float: left;
+    margin-top: 15px;
+}
+.news_alert span {
+    position: relative;
+}
+.news_alert .span1 span img {
+    height: 60px; 
+    width: 60px    
+}
+.news_alert .label {
+    position: absolute;
+    right:0px;
+    top:2px;
+}
+.news_alert .dt_arrow {
+    width: 20px;
+    padding-top: 15px;
+    margin-left: 5px;
+}
+.news_alert .profile_info {
+    font-size: 14px;
+    color: #8F9093;
+    position: relative;
+    margin-left: -10px;
+}
+.news_alert .profile_info > ul {
+    list-style: none;
+}
+.alert_footer {
+    padding-left: 20px;
+}
+.alert_footer .pull-left {
+    margin-top: 15px;
+}
+.show_company_link {
+    width:200px;
+    color: #8F9093;
+}
+.hide_company_link {
+    display: none;
+    width:200px;
+    color: #4B92C9;
+}
+.hide_company_link span {
+    margin-right: 3px;
+}
+.show_network_link {
+    width:200px;
+    margin-left: 10px;
+    color: #8F9093;
+}
+.li_conn_link {
+    width: 200px;
+    margin-left: 30px;
+    color:#4B92C9
+}
+.alert_footer .pull-right {
+    padding-right: 10px;
+    margin-top: -30px;
+}
+.pull-right button {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.company_details{
+   background-color: #eeeeee;
+   display: none;
+   margin: 0px;
+   position: relative;
+   -webkit-border-radius: 0; 
+   -moz-border-radius: 0;
+   border-radius: 0;
+   padding:10px
+}
+
+.company_details table tr td{
+    width: 348px
+}
+
+.company_details .span2{
+   width:74px;
+}
+
+.company_details table tr td img{
+height: 60px; width: 60px;padding: 34px 0 0 10px;
+}
+
+.list_style_none{
+    list-style: none;
+}
