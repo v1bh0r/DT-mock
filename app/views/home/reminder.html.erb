@@ -1,115 +1,202 @@
 <div class="content">
   <div class="row">
-    <div class="span12" style="background-color: white;width: 976px">
-      <div class="span9" style="margin-left: 10px;">
-        <div  class="hero-unit"style="-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;margin: 10px;padding:10px" >
+    <div class ="span12" style="width: 976px;background-color: white">
+      <div>
+        <div class="hero-unit">
           <div class="row">
-            <div class="span3" style="position: relative;width: 220px">
-              <span >
-                <img src="/assets/pradeep.jpg" style="height: 30px; width: 30px;">
+            <div class="alert_header_info">
+              <span>
+                <img src="/assets/pradeep.jpg">
               </span>
-              <span style="position: absolute;padding-left: 5px">
-                <span style="font-size: 16px;color:#1B75BB;font-weight: bold ">Network Alert Summary</span> 
-                <span style="font-size: 13px;color: #8C8D8F"> Thursday, <% @date =  Time.now %><%= @date.strftime("%B %d, %Y") %></span>
+              <span class="alert_header_info_ondate">
+                <span >Network Alert Summary</span> 
+                <span class="alert_date"> Thursday, <% @date =  Time.now %><%= @date.strftime("%B %d, %Y") %></span>
               </span>
+              <div class="input-prepend">
+                <button class="btn" type="button"><i class="icon-search"></i></button>
+                <input id="prependedInput" type="text" placeholder="Search My Alerts">
+              </div>
             </div>
-            <div class="span3" style="width: 190px">
-              <ul style="list-style: none; color: #969594;font-weight: bold;font-size: 20px">
+            <div class="pull-left">
+              <ul class="lhs_summary">
                 <li> 14  <small>companies made</small></li>
                 <li> 10  <small>headlines</small></li>
               </ul>
             </div>
-            <div class="span1" style="border-left: 1px solid #bcbdbf; padding: 2px;height: 50px;width: 1px;"></div>
-            <div class="span2"  style="width: 190px;margin-left: 0px;">
-              <ul style="list-style: none; color: #969594;font-weight: bold;font-size: 17px">
+            <div class="vertical_divider"></div>
+            <div class="pull-left">
+              <ul>
                 <li> 2 <small>new companies </small></li>
-                <li> 3  <small>acquisitions</small></li>
+                <li> 3 <small>acquisitions</small></li>
                 <li> 5 <small>recently funded</small></li>
               </ul>
             </div>
           </div>
-        </div> 
-      </div>
-      <div class="span3">
-        <div>
-          <h4 style="color: #333;"> Search My Alerts</h4>
-          <form class="navbar-search pull-left">
-            <input type="text"><i class="icon-search"style="right: 9px;top: -30px;"></i>
-          </form>
         </div>
-      </div>           
-    </div> 
-  </div>
-  <div class="row">
-    <div class="span12" style="background-color: white;width: 976px">
-      <h2 style="color: #5A5B5D; padding-left: 20px; padding-top: 10px;">Reminders</h2>
-      <hr style="border: 1px solid #D0D2D3;">
-    </div>
+      </div>
+      <div class ="alert_frequency">
+        <h2>Reminders</h2>
+      </div> 
 
-  </div>
-  <div class="row">
-    <div class="span12" style="background-color: white;width: 976px">
-      <div class="span9">
-        <div style="height: 160px">
-          <span class="pull-right" style="margin-top: -10px;padding-right: 10px;color: #8C8D8F"><%= "Aug 29, 7:35am" %></span>
-          <span class="content" style="font-size: 18px;color: #8C8D8F">Your connections with
-            <b>
-              Discovery Communications
-            </b>
+      <div class ="alert_detail">
+        <span class="alert_time"><%= "Today, 7:35am" %></span>
+        <span class="content content_heading">Your connections with
+          <b>
+            Discovery Communications
+          </b>
+        </span>
+        <br>
+        <span class="news">Recenty Funded: Lumosity Unlocks $31.5M for Brain Training</span>
+        <span class="news_alert">
+          <span class="span1">
+            <span>
+              <img src="/assets/pradeep.jpg">
+            </span>
+            <span class="label label-info">You</span>                      
           </span>
-          <br>
-          <span class="news" style="font-size: 18px;color: #5d5e60;font-weight: bold">Recenty Funded: Lumosity Unlocks $31.5M for Brain Training</span>
-          <br><br>
-          <div class="news" style="font-size: 18px;color: #1B75BB">
-            <div class="span9" style="margin-left: -17px">
+          <span  class="span1 dt_arrow"><img src="/assets/arrow.png"></span>
+          <span  class="span1" style="margin-left: 7px"><span><img src="/assets/Paula_Smith_New.jpg"></span></span> 
+          <span class="span2 profile_info">
+            <ul>
+              <li><b>Paula Smith</b></li>
+              <li>Senior Editor</li>
+              <li>Market Blog</li>
+            </ul>
+          </span>
+          <span  class="span1 dt_arrow"><img src="/assets/arrow.png"></span>
+          <span  class="span1" style="margin-left: 7px"><span><img src="/assets/DeepakChopra.jpg"></span></span> 
+          <span class="span2 profile_info">
+            <ul>
+              <li><b>Deepak Chopra</b></li>
+              <li>The Big Cheese</li>
+              <li>ContinuumG</li>
+            </ul>
+          </span>
+        </span>
 
-              <span style="position: relative" class="span1">
-                <span>
-                  <img src="/assets/pradeep.jpg" style="height: 60px; width: 60px">
-                </span>
-                <span class="label label-info" style="position: absolute;right:0px;top:2px">You</span>                      
-              </span>
-              <span  class="span1" style="width: 20px;padding-top: 15px">  <img src="/assets/arrow.png"></span>
-              <span  class="span1"><img src="/assets/Paula_Smith_New.jpg" style="height: 60px; width: 60px;"></span> 
-
-              <span class="span2"  style="font-size: 14px;color: #8F9093;position: relative">
-                <ul style="list-style: none;">
-                  <li style=" font-weight: bold">Paula Smith</li>
-                  <li>Senior Editor</li>
-                  <li>Market Blog</li>
-                </ul>
-              </span>
-              <span  class="span1" style="width: 20px;padding-top: 15px">  <img src="/assets/arrow.png"></span>
-              <span  class="span1"><img src="/assets/Paula_Smith_New.jpg" style="height: 60px; width: 60px;"></span> 
-
-              <span class="span2"  style="font-size: 14px;color: #8F9093;">
-                <ul style="list-style: none;">
-                  <li style=" font-weight: bold">Paula Smith</li>
-                  <li>Senior Editor</li>
-                  <li>Market Blog</li>
-                </ul>
-              </span>
-            </div>
+        <div class="alert_footer">
+          <div class="pull-left">
+            <span class ="show_company_link" id="company_show_info">+ Company</span>
+            <span class ="hide_company_link" id="company_hide_info"><span>-</span> Company</span>
+            <span class ="show_network_link">+ Network</span>
+            <span class ="li_conn_link"><a href=""> Your XX LinkedIn connections in Discovery...</a></span>
           </div>
+          <div class="share pull-right">
+            <button type="button" class="btn btn-primary btn-small">Share</button>
+          </div>
+        </div> 
 
-          <div style="margin-top: 90px">
-            <div class="pull-left" >
-              <span style="width:200px;margin-left: 5px;color: #8F9093"> + Company</span>
-              <span  style="width:200px;margin-left: 5px;color: #8F9093"> + Industry</span>
-              <span  style="width:200px;margin-left: 5px;color:#1B75BB"> Your XX LinkedIn connections in Discovery...</span>
-            </div>
-            <div class="pull-right" style="padding-right: 10px;margin-top: -30px">
-              <button type="button" class="btn btn-primary btn-small" style="width: 70px;margin-top: 15px">Share</button>
-            </div>
-          </div>       
-        </div>
       </div>
-      <div class="span3">
-        <div style="background-color: #FDFAF1;height: 160px;">
-          My Note: Must follow up Jim S refunding
-          <button type="button" class="btn btn-small" style="width: 70px;margin-top: 15px;">Share</button>
-        </div>
+
+      <div class="top-shadow company_details" id="company_detail">
+        <table>
+          <tr>
+            <td>
+              <b style="font-size: 21px;">Explorer Technology, Inc</b>
+              <span class="span2">
+                <img src="/assets/company.png">
+              </span>
+              <span class="span3">
+                <ul class="list_style_none">
+                  <li>1B yearly revenue</li>
+                  <li>5000-10000 Employees</li>
+                  <li>NASDAQ: EXTI</li>
+                </ul>
+              </span>
+              <span>Explorer Technology Group Inc. (ETG) has been supplying battery test automation solutions to customers for over 20 years.  These solutions are now established throughout North America, Europe, Asia and South America.</span>
+            </td>
+            <td>
+              <ul class="list_style_none">
+                <li>1B yearly revenue</li>
+                <li>5000-10000 Employees</li>
+                <li>NASDAQ: EXTI</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
       </div>
+
+      <div class ="alert_detail">
+        <span class="alert_time"><%= "Aug 29, 7:35am" %></span>
+        <span class="content content_heading">Your connections with
+          <b>
+            Discovery Communications
+          </b>
+        </span>
+        <br>
+        <span class="news">Recenty Funded: Lumosity Unlocks $31.5M for Brain Training</span>
+        <span class="news_alert">
+          <span class="span1">
+            <span>
+              <img src="/assets/pradeep.jpg">
+            </span>
+            <span class="label label-info">You</span>                      
+          </span>
+          <span  class="span1 dt_arrow"><img src="/assets/arrow.png"></span>
+          <span  class="span1" style="margin-left: 7px"><span><img src="/assets/Paula_Smith_New.jpg"></span></span> 
+          <span class="span2 profile_info">
+            <ul>
+              <li><b>Paula Smith</b></li>
+              <li>Senior Editor</li>
+              <li>Market Blog</li>
+            </ul>
+          </span>
+        </span>
+
+        <div class="alert_footer">
+          <div class="pull-left">
+            <span class ="show_company_link" id="company_show_info">+ Company</span>
+            <span class ="hide_company_link" id="company_hide_info"><span>-</span> Company</span>
+            <span class ="show_network_link">+ Network</span>
+            <span class ="li_conn_link"><a href=""> Your XX LinkedIn connections in Discovery...</a></span>
+          </div>
+          <div class="pull-right">
+            <button type="button" class="btn btn-primary btn-small">Add to Reminders</button><br/>
+            <button type="button" class="btn btn-primary btn-small">Share this alert</button>
+          </div>
+        </div>       
+      </div>
+      <div class ="alert_detail">
+        <span class="alert_time"><%= "Aug 29, 7:35am" %></span>
+        <span class="content content_heading">Your connections with
+          <b>
+            Discovery Communications
+          </b>
+        </span>
+        <br>
+        <span class="news">Recenty Funded: Lumosity Unlocks $31.5M for Brain Training</span>
+        <span class="news_alert">
+          <span class="span1">
+            <span>
+              <img src="/assets/pradeep.jpg">
+            </span>
+            <span class="label label-info">You</span>                      
+          </span>
+          <span  class="span1 dt_arrow"><img src="/assets/arrow.png"></span>
+          <span  class="span1" style="margin-left: 7px"><span><img src="/assets/Paula_Smith_New.jpg"></span></span> 
+          <span class="span2 profile_info">
+            <ul>
+              <li><b>Paula Smith</b></li>
+              <li>Senior Editor</li>
+              <li>Market Blog</li>
+            </ul>
+          </span>
+        </span>
+
+        <div class="alert_footer">
+          <div class="pull-left">
+            <span class ="show_company_link" id="company_show_info">+ Company</span>
+            <span class ="hide_company_link" id="company_hide_info"><span>-</span> Company</span>
+            <span class ="show_network_link">+ Network</span>
+            <span class ="li_conn_link"><a href=""> Your XX LinkedIn connections in Discovery...</a></span>
+          </div>
+          <div class="pull-right">
+            <button type="button" class="btn btn-primary btn-small">Add to Reminders</button><br/>
+            <button type="button" class="btn btn-primary btn-small">Share this alert</button>
+          </div>
+        </div>       
+      </div>
+
     </div>
   </div>
 </div>

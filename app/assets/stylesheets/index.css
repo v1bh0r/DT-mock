@@ -80,7 +80,7 @@ root {
     width: 30px;
 }
 .input-prepend button .icon-search {
-    margin-left: -6px;
+    margin-left: -4px;
 }
 .input-prepend input {
     width: 180px;   
@@ -91,14 +91,6 @@ root {
     -webkit-box-shadow: inset 0px 3px 4px lightgray;
     box-shadow: inset 0px 3px 4px lightgray;
 }
-.span3 .navbar-search .icon-search {
-    float: right;
-    position: relative;
-    right: 20px;
-    top: 6px;
-    color: #818285;
-}
-
 
 .alert_frequency {
     border-bottom:3px solid lightgray;
@@ -121,7 +113,7 @@ root {
 .alert_detail {
     height: 175px;
     border-bottom:1px solid lightgray;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .alert_detail .alert_time {
     padding-right: 10px;
@@ -211,14 +203,16 @@ root {
 }
 
 .company_details{
-   background-color: #eeeeee;
-   display: none;
-   margin: 0px;
-   position: relative;
-   -webkit-border-radius: 0; 
-   -moz-border-radius: 0;
-   border-radius: 0;
-   padding:10px
+    background-color: #eeeeee;
+    display: none;
+    margin: 0px;
+    position: relative;
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding:10px;
+    margin-bottom: 20px;
+    border-bottom:1px solid lightgray;
 }
 
 .company_details table tr td{
@@ -226,13 +220,79 @@ root {
 }
 
 .company_details .span2{
-   width:74px;
+    width:74px;
 }
 
 .company_details table tr td img{
-height: 60px; width: 60px;padding: 34px 0 0 10px;
+    height: 60px;
+    width: 60px;
+    padding: 34px 0 0 10px;
 }
 
 .list_style_none{
     list-style: none;
+}
+.navbar-search .icon-search {
+    float: right;
+    position: relative;
+    right: 20px;
+    top: 5px;
+    color: #818285;
+}
+.search_sidebar {
+    width: 264px;
+    background-color: white;
+    margin-left: 10px;
+    float: left;
+}
+.target_company {
+    padding-left: 15px;
+}
+.target_company h4 {
+    color: #5d5e60;
+}
+.target_company h5 {
+    color: #1B75BB;
+}
+
+.networks h5, 
+.industries h5,
+.update_filters h5,
+.news_types h5 {
+    color: #1B75BB;
+}
+.networks table {
+    text-align: left;
+}
+.networks table img {
+    height: 20px; 
+    width: 20px;
+}
+.networks td span {
+    margin-left:7px; 
+}
+.networks tr {
+    height: 27px;
+}
+ 
+
+.update_filters, .industries,.news_types, .networks {
+    padding-left: 15px;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.shadow_gap {
+    padding-left: 15px;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.popover  {
+    left: 393.5px !important;
+    width: 300px;
+}
+.popover-content {
+    background-color: #fdfaf1;
+}
+.input-append input {
+    width: 180px;
 }

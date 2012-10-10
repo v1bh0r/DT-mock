@@ -7,7 +7,6 @@
     <title><%= content_for?(:title) ? yield(:title) : "Dealtraction" %></title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag "application", :media => "all" %>
-    <%= stylesheet_link_tag "bootstrap", :media => "all" %>
   </head>
 
   <body>
@@ -19,9 +18,9 @@
       </div>
     </div>
 
-    <div class="navbar">
-      <div class="nav_top">     
-        <div class="container">
+    <div class="navbar navbar-inverse">
+      <div class="navbar-inner" style="border-radius: 0;">
+        <div class="container" style="width: 995px;">
           <ul class="nav">
             <li class="active"><%= link_to "Home", "/home/index" %></li>
             <li>
@@ -34,10 +33,9 @@
             <li><%= link_to "Network", "/home/index"  %></li>
             <li><%= link_to "Profile", "/home/index"  %></li>
           </ul>
-
           <ul class="nav pull-right">
             <li class="dropdown" >
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              <a data-toggle="dropdown" class="dropdown-toggle white" href="#">
                 <b class="caret"></b>&nbsp;
                 Aastha Tangri
               </a>
@@ -47,12 +45,13 @@
               </ul>
             </li>
             <li>
-              <a href="#">Add Connection</a>
+              <a href="#" class="white">Add Connection</a>
             </li>    
           </ul>
         </div>
       </div>
     </div>
+    
     <div class="container">
       <%= yield %>
     </div> <!-- /container -->

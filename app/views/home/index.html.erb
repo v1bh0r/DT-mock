@@ -37,15 +37,15 @@
         <h2>Alert <span>Display 7 days</span> <b class="caret"></b></h2>
       </div> 
 
-      <div class ="alert_detail">
+      <div  class ="alert_detail" style="position: relative">
         <span class="alert_time"><%= "Aug 29, 7:35am" %></span>
-        <span class="content content_heading">Your connections with
+        <span class="content content_heading" id="news_header_r1">Your connections with
           <b>
             Discovery Communications
           </b>
         </span>
         <br>
-        <span class="news">Recenty Funded: Lumosity Unlocks $31.5M for Brain Training</span>
+        <span class="news" id="news_r1">Recenty Funded: Lumosity Unlocks $31.5M for Brain Training</span>
         <span class="news_alert">
           <span class="span1">
             <span>
@@ -66,17 +66,17 @@
 
         <div class="alert_footer">
           <div class="pull-left">
-            <span class ="show_company_link" id="company_show_info">+ Company</span>
-            <span class ="hide_company_link" id="company_hide_info"><span>-</span> Company</span>
+            <span  class ="show_company_link pointer" id="company_show_info">+ Company</span>
+            <span class ="hide_company_link pointer" id="company_hide_info"><span>-</span> Company</span>
             <span class ="show_network_link">+ Network</span>
             <span class ="li_conn_link"><a href=""> Your XX LinkedIn connections in Discovery...</a></span>
           </div>
           <div class="pull-right">
-            <button type="button" class="btn btn-primary btn-small">Add to Reminders</button><br/>
-            <button type="button" class="btn btn-primary btn-small">Share this alert</button>
+            <button id="r1" type="button" class="btn btn-primary btn-small" onmouseover="show_reminder(this.id)">Add to Reminders</button>
+            <br />
+            <button id="s1" type="button" class="btn btn-primary btn-small" onmouseover="share_news_alert('Discovery Communications',this.id)">Share this alert</button>
           </div>
         </div> 
-       
       </div>
 
       <div class="top-shadow company_details" id="company_detail">
@@ -109,13 +109,13 @@
 
       <div class ="alert_detail">
         <span class="alert_time"><%= "Aug 29, 7:35am" %></span>
-        <span class="content content_heading">Your connections with
+        <span class="content content_heading" id="news_header_r2">Your connections with
           <b>
-            Discovery Communications
+            Arista Networks
           </b>
         </span>
         <br>
-        <span class="news">Recenty Funded: Lumosity Unlocks $31.5M for Brain Training</span>
+        <span class="news" id="news_r2">Joined Management: Michael E. Lehman at Arista Networks</span>
         <span class="news_alert">
           <span class="span1">
             <span>
@@ -142,20 +142,20 @@
             <span class ="li_conn_link"><a href=""> Your XX LinkedIn connections in Discovery...</a></span>
           </div>
           <div class="pull-right">
-            <button type="button" class="btn btn-primary btn-small">Add to Reminders</button><br/>
-            <button type="button" class="btn btn-primary btn-small">Share this alert</button>
+            <button id ="r2" type="button" class="btn btn-primary btn-small" onmouseover="show_reminder(this.id)">Add to Reminders</button><br/>
+            <button id="s2" type="button" class="btn btn-primary btn-small" onmouseover="share_news_alert('Arista Networks',this.id)">Share this alert</button>
           </div>
         </div>       
       </div>
       <div class ="alert_detail">
         <span class="alert_time"><%= "Aug 29, 7:35am" %></span>
-        <span class="content content_heading">Your connections with
+        <span class="content content_heading" id="news_header_r3">Your connections with
           <b>
-            Discovery Communications
+            Xerox Corporation
           </b>
         </span>
         <br>
-        <span class="news">Recenty Funded: Lumosity Unlocks $31.5M for Brain Training</span>
+        <span class="news" id="news_r3">Joined Board: Owen Brown at Xerox Corporation</span>
         <span class="news_alert">
           <span class="span1">
             <span>
@@ -182,52 +182,61 @@
             <span class ="li_conn_link"><a href=""> Your XX LinkedIn connections in Discovery...</a></span>
           </div>
           <div class="pull-right">
-            <button type="button" class="btn btn-primary btn-small">Add to Reminders</button><br/>
-            <button type="button" class="btn btn-primary btn-small">Share this alert</button>
+            <button id ="r3" type="button" class="btn btn-primary btn-small" onmouseover="show_reminder(this.id)">Add to Reminders</button><br/>
+            <button id="s3" type="button" class="btn btn-primary btn-small"  onmouseover="share_news_alert('Xerox Corporation',this.id)">Share this alert</button>
           </div>
         </div>       
       </div>
     </div>
-    
-    <div class="span3" style=" width: 264px;background-color: white;margin-left: 10px">      
-      <div style="padding-left: 15px">
-        <h4 style="color: #5d5e60"> Improve your DealTraction </h4>
-        <h5 style="color: #1B75BB"> Add Target Company </h5>
-        <form class="navbar-search pull-left">
-          <input type="text" placeholder="Search"><i class="icon-search"></i>
-        </form>
+    <div class="search_sidebar">      
+      <div class="target_company">
+        <h4> Improve your DealTraction </h4>
+        <h5> Add Target Company </h5>
+        <div class="input-append">
+          <input id="appendedInput" type="text" placeholder="Search">
+          <button class="btn" type="button">+</button> 
+        </div> 
       </div>
 
-      <div  style="padding-left: 15px;margin-top: 58px;padding-top: 15px;" class="top-shadow">
-        <h5 style="color: #1B75BB">  Add people from your networks </h5>
-        <table width="90%" style="text-align: left">
+      <div class="networks top-shadow">
+        <h5> Add people from your networks </h5>
+        <table width="90%">
           <tr>
-            <td><img src="/assets/linkedin.png" style="height: 20px; width: 20px;"><span style="margin-left:7px">LinkedIn</span></td>
-            <td><img src="/assets/fb.png" style="height: 20px; width: 20px;"><span style="margin-left:7px">Facebook</span></td>
-          </tr>
-          <tr style="height: 38px">
-            <td><img src="/assets/google.png" style="height: 20px; width: 20px;"><span style="margin-left:7px">Google+</span></td>
-            <td><img src="/assets/twitter.png" style="height: 20px; width: 20px;"><span style="margin-left:7px">Twitter</span></td>
+            <td><img src="/assets/linkedin.png"><span>LinkedIn</span></td>
+            <td><img src="/assets/fb.png"><span>Facebook</span></td>
           </tr>
           <tr>
-            <td  colspan="2"><img src="/assets/outlook.png" style="height: 20px; width: 20px;"><span style="margin-left:7px">Outlook</span></td>
+            <td><img src="/assets/google.png"><span>Google+</span></td>
+            <td><img src="/assets/twitter.png"><span>Twitter</span></td>
+          </tr>
+          <tr>
+            <td  colspan="2"><img src="/assets/outlook.png"><span>Outlook</span></td>
           </tr>
         </table>
-      </div>     
-      <div  style="padding-left: 15px;margin-top: 13px;padding-top: 15px;" class="top-shadow">
-        <h5 style="color: #1B75BB"> Add industries </h5>
-        <form class="navbar-search ">
-          <input type="text"  placeholder="Search"><i class="icon-search"></i>
-        </form>
+      </div> 
+      <div class="news_types top-shadow">     
+        <h5> Add news types </h5>
+        <div class="input-append">
+          <input id="appendedInput" type="text" placeholder="Search">
+          <button class="btn" type="button">+</button> 
+        </div>  
       </div>
-      <div  style="padding-left: 15px;margin-top: 60px;padding-top: 15px;" class="top-shadow">       
-        <h5 style="color: #1B75BB">Update your filters </h5>
+      <div class="industries top-shadow">    
+        <h5> Add industries </h5>
+        <div class="input-append">
+          <input id="appendedInput" type="text" placeholder="Search">
+          <button class="btn" type="button">+</button> 
+        </div>              
       </div>
-      <div  style="padding-left: 15px;margin-top: 15px;padding-top: 15px;" class="top-shadow">       
+      <div class="update_filters top-shadow">       
+        <h5><a href="#">Update your filters</a></h5>
+      </div>
+      <div class="shadow_gap top-shadow">       
       </div>
     </div>    
-
   </div>
 </div>
+
+
 
 
