@@ -76,12 +76,8 @@ root {
     margin-top: 25px;
 }
 
-.input-prepend button {
-    width: 30px;
-}
-.input-prepend button .icon-search {
-    margin-left: -4px;
-}
+
+
 .input-prepend input {
     width: 180px;   
 }
@@ -274,7 +270,6 @@ root {
 .networks tr {
     height: 27px;
 }
- 
 
 .update_filters, .industries,.news_types, .networks {
     padding-left: 15px;
@@ -295,4 +290,8 @@ root {
 }
 .input-append input {
     width: 180px;
+}
+
+.input-prepend > .btn, .input-append > .btn{
+    padding: 4px 10px;
 }
