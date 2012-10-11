@@ -79,3 +79,6 @@ footer .container > ul > li > span {
 .dropdown .caret {
     border-top-color: white !important;
 }
+.input-prepend > .btn, .input-append > .btn {
+    padding: 4px 10px;
+}

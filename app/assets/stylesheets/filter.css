@@ -1,0 +1,100 @@
+/* 
+    Document   : filter
+    Created on : 10 Oct, 2012, 5:58:16 PM
+    Author     : aastha
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.span12 {
+    background-color: white;
+    width: 976px; 
+}
+.filter {
+    border-bottom:1px solid lightgrey;
+}
+.filter_desc,.filter_bundle {
+    margin-left:20px;
+    margin-right: 20px;
+}
+.filter_desc h2 {
+    color: #5A5B5D;
+}
+.filter_desc span {
+    font-size: 18px;
+    color: #8C8D8F;
+}
+.filter_bundle h4, .custom_filter_desc h4, h5, .input-append button {
+    color: #1B75BB;
+}
+.filter_bundle span, .custom_filter_desc span {
+    font-size: 16px;
+    color: #5A5B5D;
+}
+.well {
+    margin-top: 20px;
+    padding-bottom: 47px;
+}
+
+.well ul{
+    list-style: none;
+}
+
+.well ul li{
+    float: left;
+    width: 30%
+}
+
+.well ul li input{
+    margin: 8px;
+}
+
+.custom_filter{
+    padding-bottom: 40px;
+}
+.custom_filter_desc{
+    margin-left:20px;
+    margin-right: 20px
+}
+
+.custom_filter_options{
+    margin-top: 20px;
+}
+.custom_filter_options ul{
+    list-style: none;
+    float: left;
+}
+.custom_filter_options_header{
+    font-size: 16px;
+    color: #1B75BB;
+    font-weight: bold
+}
+.custom_filter_options_desc{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgrey
+}
+
+.custom_filter_options_list .scroll{
+    overflow-y:scroll;
+    background-color: #f3f7f9;
+}
+
+.custom_filter_options_list ul{
+    list-style: none;
+    float: left;
+    margin-left:0px;  
+}
+
+.update_filters_btn{
+    text-align: right;
+    padding-right: 20px
+}
+.custom_filter_options_list input {
+    margin: 8px;
+}
+

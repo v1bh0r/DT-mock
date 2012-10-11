@@ -76,8 +76,6 @@ root {
     margin-top: 25px;
 }
 
-
-
 .input-prepend input {
     width: 180px;   
 }
@@ -289,9 +287,6 @@ root {
     background-color: #fdfaf1;
 }
 .input-append input {
-    width: 180px;
+    width: auto;
 }
 
-.input-prepend > .btn, .input-append > .btn{
-    padding: 4px 10px;
-}
