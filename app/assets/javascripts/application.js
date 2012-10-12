@@ -65,4 +65,12 @@ function share_news_alert(company_name,id){
     })  
 }
 
-
+$('.carousel').carousel({
+    interval: 4000
+  })
+  $('#carousel-nav a').click(function(q){
+    q.preventDefault();
+    targetSlide = $(this).attr('data-to')-1;
+    $('#myCarousel').carousel(targetSlide);
+    $(this).addClass('active').siblings().removeClass('active');
+  });    

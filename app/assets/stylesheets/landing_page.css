@@ -1,0 +1,51 @@
+/* 
+    Document   : landing_page
+    Created on : 12 Oct, 2012, 6:07:28 PM
+    Author     : aastha
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.carousel, .carousel-inner .item {height:323px}
+
+#myCarousel {
+    margin-top: 20px;
+    width:320px;
+}
+.carousel-caption h4{color:white; font-size: 16px !important;}
+.carousel-caption p {
+    margin-bottom: 0;
+}
+.carousel-caption p a {display:none;}
+#carousel-nav {
+    text-align: center;
+    border-bottom: none;
+    position:absolute;
+    top:75px
+}
+#carousel-nav a {
+    margin: 5px 0px;
+    background: #eee;
+    color: #000;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#carousel-nav a.active {
+    background: #8ac43e;
+    color: black;
+}
+.right,
+.alignright {
+    float: right;
+    padding-left: 5px;
+}
+#myCarousel .right {
+    float: none;
+}
