@@ -14,3 +14,75 @@ root {
     background-color: white;
     width: 976px;  
 }
+
+.margin_left_zero{
+    margin-left: 0px
+}
+.share_btn {
+    width: auto !important;
+    float: right;
+    margin-right: 10px
+}
+
+.alert_reminder_detail{
+    height: 175px;    
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.alert_reminder_detail .alert_time {
+    padding-right: 10px;
+    color: #8C8D8F;
+    float: right;
+}
+.reminder_show_company_link {
+    width: 104px;
+    color: #8F9093;
+}
+.reminder_hide_company_link {
+    display: none;
+    width: 104px;
+    color: #4B92C9;
+}
+.reminder_hide_company_link span {
+    margin-right: 3px;
+}
+.reminder_show_network_link {
+    width: 104px;
+    color: #8F9093;
+}
+.reminder_li_conn_link {
+    color:#4B92C9
+}
+
+.share_reminder{
+    width: 105px;   
+}
+
+.curl{
+    width:40px;
+    height:35px;    
+    margin-top: 2px;
+    position: absolute;
+}
+.reminder_note{
+    width: 240px;
+}
+.border_bottom {
+    border-bottom: 2px solid lightgrey;
+}
+h2 {
+    padding-left: 20px;
+    color: #5d5e60; 
+}
+.alert_div {
+    padding-top: 5px;
+    border-bottom:1px solid lightgray;
+}
+.reminder_note_text {
+    background-color: #fbf9f0;
+    min-height: 145px;
+}
+.reminder_note_footer {
+    background-color: #f9f5e2;
+    min-height: 30px;
+}

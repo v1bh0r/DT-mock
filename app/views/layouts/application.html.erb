@@ -10,48 +10,66 @@
   </head>
 
   <body>
-    <div class="logo"> 
-      <div class="container">
-        <a href="/home">
-          <img alt="Logo" src="/assets/main_logo.png"/>
-        </a>  
-      </div>
-    </div>
-
-    <div class="navbar navbar-inverse">
-      <div class="navbar-inner" style="border-radius: 0;">
-        <div class="container" style="width: 995px;">
-          <ul class="nav">
-            <li class="active"><%= link_to "Home", "/home/index" %></li>
-            <li>
-              <%= link_to "/home/reminder" do  %>
-                Reminders
-                <span class="reminder-count">20</span>
-              <%end%>
-            </li>
-            <li><%= link_to "Filters", "/home/filter"  %></li>
-            <li><%= link_to "Network", "/home/index"  %></li>
-            <li><%= link_to "Profile", "/home/index"  %></li>
-          </ul>
-          <ul class="nav pull-right">
-            <li class="dropdown" >
-              <a data-toggle="dropdown" class="dropdown-toggle white" href="#">
-                <b class="caret"></b>&nbsp;
-                Aastha Tangri
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Logout</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" class="white">Add Connection</a>
-            </li>    
-          </ul>
+    <%unless on_page?("home","landing_page") %>
+      <div class="logo"> 
+        <div class="container">
+          <a href="/home">
+            <img alt="Logo" src="/assets/main_logo.png"/>
+          </a>  
         </div>
       </div>
-    </div>
-    
+
+
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner" style="border-radius: 0;">
+          <div class="container" style="width: 995px;">
+            <ul class="nav">
+              <li class="active"><%= link_to "Home", "/home/index" %></li>
+              <li>
+                <%= link_to "/home/reminder" do  %>
+                  Reminders
+                  <span class="reminder-count">20</span>
+                <%end%>
+              </li>
+              <li><%= link_to "Filters", "/home/filter"  %></li>
+              <li><%= link_to "Network", "/home/index"  %></li>
+              <li><%= link_to "Profile", "/home/index"  %></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li class="dropdown" >
+                <a data-toggle="dropdown" class="dropdown-toggle white" href="#">
+                  <b class="caret"></b>&nbsp;
+                  Aastha Tangri
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="white">Add Connection</a>
+              </li>    
+            </ul>
+          </div>
+        </div>
+      </div>
+    <%else%>
+      <div class="logo"> 
+        <div class="container">
+          <a href="/home">
+            <img alt="Logo" src="/assets/main_logo.png"/>
+          </a>  
+          <span class="pull-right">
+            <ul style="list-style: none;margin-top: 10px">
+               <li style="display: inline"><a>Signup</a></li>
+              <li style="display: inline;padding-left: 10px;"><a>Login</a></li>             
+            </ul>
+          </span>
+        </div>
+      </div>
+
+
+    <%end%>
     <div class="container">
       <%= yield %>
     </div> <!-- /container -->

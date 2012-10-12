@@ -1,191 +1,250 @@
 <div class="content">
   <div class="row">
     <div class="span12">
-      <div class="hero-unit">
-        <div class="row">
-          <div class="alert_header_info">
-            <span>
-              <img src="/assets/pradeep.jpg">
-            </span>
-            <span class="alert_header_info_ondate">
-              <span >Network Alert Summary</span> 
-              <span class="alert_date"> Thursday, <% @date =  Time.now %><%= @date.strftime("%B %d, %Y") %></span>
-            </span>
-            <div class="input-prepend">
-              <button class="btn" type="button"><i class="icon-search"></i></button>
-              <input id="prependedInput" type="text" placeholder="Search My Alerts">
+      <div class="span9 margin_left_zero">
+        <div class="hero-unit">
+          <div class="row">
+            <div class="alert_header_info">
+              <span>
+                <img src="/assets/pradeep.jpg">
+              </span>
+              <span class="alert_header_info_ondate">
+                <span >Network Alert Summary</span> 
+                <span class="alert_date"> Thursday, <% @date =  Time.now %><%= @date.strftime("%B %d, %Y") %></span>
+              </span>
+              <div class="input-prepend">
+                <button class="btn" type="button"><i class="icon-search"></i></button>
+                <input id="prependedInput" type="text" placeholder="Search My Alerts">
+              </div>
+            </div>
+            <div class="pull-left">
+              <ul class="lhs_summary">
+                <li> 14  <small>companies made</small></li>
+                <li> 10  <small>headlines</small></li>
+              </ul>
+            </div>
+            <div class="vertical_divider"></div>
+            <div class="pull-left">
+              <ul>
+                <li> 2 <small>new companies </small></li>
+                <li> 3 <small>acquisitions</small></li>
+                <li> 5 <small>recently funded</small></li>
+              </ul>
             </div>
           </div>
-          <div class="pull-left">
-            <ul class="lhs_summary">
-              <li> 14  <small>companies made</small></li>
-              <li> 10  <small>headlines</small></li>
-            </ul>
+        </div>
+      </div>
+      <div class="span3"></div>   
+    </div>
+  </div> 
+
+  <div class="row">
+    <div class="span12 border_bottom">
+      <h2>Reminders</h2>
+    </div> 
+  </div>
+
+  <div class="row">
+    <div class="span12" style="padding-bottom: 40px;">
+      <div class="row">
+        <div class="span12 alert_div">
+          <div class="span9 margin_left_zero" >
+            <div class ="alert_reminder_detail">
+              <div class="row">
+                <span class="alert_time"><%= "Aug 29, 7:35am" %></span>
+                <span class="content content_heading" id="news_header_r1">Your connections with
+                  <b>
+                    Discovery Communications
+                  </b>
+                </span>
+              </div>
+              <div class="row">
+                <span class="news" id="news_r1">Recenty Funded: Lumosity Unlocks $31.5M for Brain Training</span>
+              </div>
+              <div class="row">
+                <span class="news_alert">
+                  <span class="span1">
+                    <span>
+                      <img src="/assets/pradeep.jpg">
+                    </span>
+                    <span class="label label-info">You</span>                      
+                  </span>
+                  <span  class="span1 dt_arrow"><img src="/assets/arrow.png"></span>
+                  <span  class="span1" style="margin-left: 7px"><span><img src="/assets/Paula_Smith_New.jpg"></span></span> 
+                  <span class="span2 profile_info">
+                    <ul>
+                      <li><b>Paula Smith</b></li>
+                      <li>Senior Editor</li>
+                      <li>Market Blog</li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+              <div class="row">
+                <span class ="span2 pointer reminder_show_company_link" id="company_show_info">+ Company</span>
+                <span class ="span2 pointer reminder_hide_company_link" id="company_hide_info"><span>-</span> Company</span>
+                <span class ="span2 pointer reminder_show_network_link">+ Network</span>
+                <span class ="span4 reminder_li_conn_link"><a href=""> Your XX LinkedIn connections in Discovery...</a></span>
+                <span class="span1 pointer share_reminder"><button type="button" class="btn btn-primary btn-small share_btn">Share</button></span>
+              </div>
+            </div>
           </div>
-          <div class="vertical_divider"></div>
-          <div class="pull-left">
-            <ul>
-              <li> 2 <small>new companies </small></li>
-              <li> 3 <small>acquisitions</small></li>
-              <li> 5 <small>recently funded</small></li>
-            </ul>
+          <div class="span3 reminder_note">
+            <div class="reminder_note_text"> 
+              <img alt="Fold" class="curl" src="/assets/fold.png"> 
+            </div>       
+            <div class="reminder_note_footer">          
+              <button type="button" class="btn btn-small share_btn">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <div class="top-shadow company_details" id="company_detail">
+            <table>
+              <tr>
+                <td>
+                  <b style="font-size: 21px;">Explorer Technology, Inc</b>
+                  <span class="span2">
+                    <img src="/assets/company.png">
+                  </span>
+                  <span class="span3">
+                    <ul class="list_style_none">
+                      <li>1B yearly revenue</li>
+                      <li>5000-10000 Employees</li>
+                      <li>NASDAQ: EXTI</li>
+                    </ul>
+                  </span>
+                  <span>Explorer Technology Group Inc. (ETG) has been supplying battery test automation solutions to customers for over 20 years.  These solutions are now established throughout North America, Europe, Asia and South America.</span>
+                </td>
+                <td>
+                  <ul class="list_style_none">
+                    <li>1B yearly revenue</li>
+                    <li>5000-10000 Employees</li>
+                    <li>NASDAQ: EXTI</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12 alert_div">
+          <div class="span9 margin_left_zero" >
+            <div  class ="alert_reminder_detail">
+              <div class="row">
+                <span class="alert_time"><%= "Aug 29, 7:35am" %></span>
+                <span class="content content_heading" id="news_header_r1">Your connections with
+                  <b>
+                    Discovery Communications
+                  </b>
+                </span>
+              </div>
+              <div class="row">
+                <span class="news" id="news_r1">Recenty Funded: Lumosity Unlocks $31.5M for Brain Training</span>
+              </div>
+              <div class="row">
+                <span class="news_alert">
+                  <span class="span1">
+                    <span>
+                      <img src="/assets/pradeep.jpg">
+                    </span>
+                    <span class="label label-info">You</span>                      
+                  </span>
+                  <span  class="span1 dt_arrow"><img src="/assets/arrow.png"></span>
+                  <span  class="span1" style="margin-left: 7px"><span><img src="/assets/Paula_Smith_New.jpg"></span></span> 
+                  <span class="span2 profile_info">
+                    <ul>
+                      <li><b>PaulaSam Smith</b></li>
+                      <li>Managing Editor</li>
+                      <li>Market Blog</li>
+                    </ul>
+                  </span>
+                  <span  class="span1 dt_arrow"><img src="/assets/arrow.png"></span>
+                  <span  class="span1" style="margin-left: 7px"><span><img src="/assets/DeepakChopra.jpg"></span></span> 
+                  <span class="span2 profile_info">
+                    <ul>
+                      <li><b>DeepakChopra</b></li>
+                      <li>Senior Editor</li>
+                      <li>Market Blog</li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+              <div class="row">
+                <span class ="span2 pointer reminder_show_company_link">+ Company</span>
+                <span class ="span2 pointer reminder_hide_company_link"><span>-</span> Company</span>
+                <span class ="span2 pointer reminder_show_network_link">+ Network</span>
+                <span class ="span4 reminder_li_conn_link"><a href=""> Your XX LinkedIn connections in Discovery...</a></span>
+                <span class="span1 pointer share_reminder"><button type="button" class="btn btn-primary btn-small share_btn">Share</button></span>
+              </div>
+            </div>
+          </div>
+          <div class="span3 reminder_note">
+            <div class="reminder_note_text">
+              <img alt="Fold" class="curl" src="/assets/fold.png"> 
+            </div>       
+            <div class="reminder_note_footer">          
+              <button type="button" class="btn btn-small share_btn">Update</button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class ="alert_frequency">
-        <h2>Alert <span>Display 7 days</span> <b class="caret"></b></h2>
-      </div> 
-
-      <div  class ="alert_detail" style="position: relative">
-        <span class="alert_time"><%= "Aug 29, 7:35am" %></span>
-        <span class="content content_heading" id="news_header_r1">Your connections with
-          <b>
-            Discovery Communications
-          </b>
-        </span>
-        <br>
-        <span class="news" id="news_r1">Recenty Funded: Lumosity Unlocks $31.5M for Brain Training</span>
-        <span class="news_alert">
-          <span class="span1">
-            <span>
-              <img src="/assets/pradeep.jpg">
-            </span>
-            <span class="label label-info">You</span>                      
-          </span>
-          <span  class="span1 dt_arrow"><img src="/assets/arrow.png"></span>
-          <span  class="span1" style="margin-left: 7px"><span><img src="/assets/Paula_Smith_New.jpg"></span></span> 
-          <span class="span2 profile_info">
-            <ul>
-              <li><b>Paula Smith</b></li>
-              <li>Senior Editor</li>
-              <li>Market Blog</li>
-            </ul>
-          </span>
-        </span>
-
-        <div class="alert_footer">
-          <div class="pull-left">
-            <span  class ="show_company_link pointer" id="company_show_info">+ Company</span>
-            <span class ="hide_company_link pointer" id="company_hide_info"><span>-</span> Company</span>
-            <span class ="show_network_link">+ Network</span>
-            <span class ="li_conn_link"><a href=""> Your XX LinkedIn connections in Discovery...</a></span>
+      <div class="row">
+        <div class="span12 alert_div">
+          <div class="span9 margin_left_zero" >
+            <div  class ="alert_reminder_detail">
+              <div class="row">
+                <span class="alert_time"><%= "Aug 29, 7:35am" %></span>
+                <span class="content content_heading" id="news_header_r1">Your connections with
+                  <b>
+                    Discovery Communications
+                  </b>
+                </span>
+              </div>
+              <div class="row">
+                <span class="news" id="news_r1">Recenty Funded: Lumosity Unlocks $31.5M for Brain Training</span>
+              </div>
+              <div class="row">
+                <span class="news_alert">
+                  <span class="span1">
+                    <span>
+                      <img src="/assets/pradeep.jpg">
+                    </span>
+                    <span class="label label-info">You</span>                      
+                  </span>
+                  <span  class="span1 dt_arrow"><img src="/assets/arrow.png"></span>
+                  <span  class="span1" style="margin-left: 7px"><span><img src="/assets/Paula_Smith_New.jpg"></span></span> 
+                  <span class="span2 profile_info">
+                    <ul>
+                      <li><b>Paula Smith</b></li>
+                      <li>Senior Editor</li>
+                      <li>Market Blog</li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+              <div class="row">
+                <span class ="span2 pointer reminder_show_company_link">+ Company</span>
+                <span class ="span2 pointer reminder_hide_company_link"><span>-</span> Company</span>
+                <span class ="span2 pointer reminder_show_network_link">+ Network</span>
+                <span class ="span4 reminder_li_conn_link"><a href=""> Your XX LinkedIn connections in Discovery...</a></span>
+                <span class="span1 pointer share_reminder"><button type="button" class="btn btn-primary btn-small share_btn">Share</button></span>
+              </div>
+            </div>
           </div>
-          <div class="pull-right">
-            <button id="r1" type="button" class="btn btn-primary btn-small" onmouseover="show_reminder(this.id)">Add to Reminders</button>
-            <br />
-            <button id="s1" type="button" class="btn btn-primary btn-small" onmouseover="share_news_alert('Discovery Communications',this.id)">Share this alert</button>
+          <div class="span3 reminder_note">
+            <div class="reminder_note_text">
+              <img alt="Fold" class="curl" src="/assets/fold.png"> 
+            </div>       
+            <div class="reminder_note_footer">          
+              <button type="button" class="btn btn-small share_btn">Update</button>
+            </div>
           </div>
-        </div> 
-      </div>
-
-      <div class="top-shadow company_details" id="company_detail">
-        <table>
-          <tr>
-            <td>
-              <b style="font-size: 21px;">Explorer Technology, Inc</b>
-              <span class="span2">
-                <img src="/assets/company.png">
-              </span>
-              <span class="span3">
-                <ul class="list_style_none">
-                  <li>1B yearly revenue</li>
-                  <li>5000-10000 Employees</li>
-                  <li>NASDAQ: EXTI</li>
-                </ul>
-              </span>
-              <span>Explorer Technology Group Inc. (ETG) has been supplying battery test automation solutions to customers for over 20 years.  These solutions are now established throughout North America, Europe, Asia and South America.</span>
-            </td>
-            <td>
-              <ul class="list_style_none">
-                <li>1B yearly revenue</li>
-                <li>5000-10000 Employees</li>
-                <li>NASDAQ: EXTI</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </div>
-
-      <div class ="alert_detail">
-        <span class="alert_time"><%= "Aug 29, 7:35am" %></span>
-        <span class="content content_heading" id="news_header_r2">Your connections with
-          <b>
-            Arista Networks
-          </b>
-        </span>
-        <br>
-        <span class="news" id="news_r2">Joined Management: Michael E. Lehman at Arista Networks</span>
-        <span class="news_alert">
-          <span class="span1">
-            <span>
-              <img src="/assets/pradeep.jpg">
-            </span>
-            <span class="label label-info">You</span>                      
-          </span>
-          <span  class="span1 dt_arrow"><img src="/assets/arrow.png"></span>
-          <span  class="span1" style="margin-left: 7px"><span><img src="/assets/Paula_Smith_New.jpg"></span></span> 
-          <span class="span2 profile_info">
-            <ul>
-              <li><b>Paula Smith</b></li>
-              <li>Senior Editor</li>
-              <li>Market Blog</li>
-            </ul>
-          </span>
-        </span>
-
-        <div class="alert_footer">
-          <div class="pull-left">
-            <span class ="show_company_link" id="company_show_info">+ Company</span>
-            <span class ="hide_company_link" id="company_hide_info"><span>-</span> Company</span>
-            <span class ="show_network_link">+ Network</span>
-            <span class ="li_conn_link"><a href=""> Your XX LinkedIn connections in Discovery...</a></span>
-          </div>
-          <div class="pull-right">
-            <button id ="r2" type="button" class="btn btn-primary btn-small" onmouseover="show_reminder(this.id)">Add to Reminders</button><br/>
-            <button id="s2" type="button" class="btn btn-primary btn-small" onmouseover="share_news_alert('Arista Networks',this.id)">Share this alert</button>
-          </div>
-        </div>       
-      </div>
-      <div class ="alert_detail">
-        <span class="alert_time"><%= "Aug 29, 7:35am" %></span>
-        <span class="content content_heading" id="news_header_r3">Your connections with
-          <b>
-            Xerox Corporation
-          </b>
-        </span>
-        <br>
-        <span class="news" id="news_r3">Joined Board: Owen Brown at Xerox Corporation</span>
-        <span class="news_alert">
-          <span class="span1">
-            <span>
-              <img src="/assets/pradeep.jpg">
-            </span>
-            <span class="label label-info">You</span>                      
-          </span>
-          <span  class="span1 dt_arrow"><img src="/assets/arrow.png"></span>
-          <span  class="span1" style="margin-left: 7px"><span><img src="/assets/Paula_Smith_New.jpg"></span></span> 
-          <span class="span2 profile_info">
-            <ul>
-              <li><b>Paula Smith</b></li>
-              <li>Senior Editor</li>
-              <li>Market Blog</li>
-            </ul>
-          </span>
-        </span>
-
-        <div class="alert_footer">
-          <div class="pull-left">
-            <span class ="show_company_link" id="company_show_info">+ Company</span>
-            <span class ="hide_company_link" id="company_hide_info"><span>-</span> Company</span>
-            <span class ="show_network_link">+ Network</span>
-            <span class ="li_conn_link"><a href=""> Your XX LinkedIn connections in Discovery...</a></span>
-          </div>
-          <div class="pull-right">
-            <button id ="r3" type="button" class="btn btn-primary btn-small" onmouseover="show_reminder(this.id)">Add to Reminders</button><br/>
-            <button id="s3" type="button" class="btn btn-primary btn-small"  onmouseover="share_news_alert('Xerox Corporation',this.id)">Share this alert</button>
-          </div>
-        </div>       
+        </div>
       </div>
     </div>
   </div>

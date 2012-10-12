@@ -22,6 +22,7 @@ root {
     margin-right: 20px;
 }
 .filter_desc h2 {
+    margin-left: -20px;
     color: #5A5B5D;
 }
 .filter_desc span {
@@ -82,6 +83,7 @@ root {
 .custom_filter_options_list .scroll{
     overflow-y:scroll;
     background-color: #f3f7f9;
+    height: 260px
 }
 
 .custom_filter_options_list ul{
