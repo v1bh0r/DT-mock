@@ -1,0 +1,57 @@
+.carousel, .carousel-inner .item {
+    height:320px
+}
+
+#myCarousel {
+    margin-top: 20px;
+    width:380px;
+}
+.carousel-caption h4{
+    color:white;
+    font-size: 16px !important;
+}
+
+.carousel-caption p {
+    margin-bottom: 0;
+}
+
+.carousel-caption p a {
+    display:none;
+}
+
+#carousel-nav {
+    text-align: center;
+    border-bottom: none;
+    position:absolute;
+    top: 80px;
+    margin-left: 5px;
+    width: 65px;
+}
+
+#carousel-nav a {
+    margin: 5px 0px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/assets/white_dot.png");
+    background-repeat:no-repeat
+}
+
+#carousel-nav a.active {
+    background-image: url("/assets/green_dot.png");
+    background-repeat:no-repeat
+}
+
+.right,
+.alignright {
+    float: right;
+    padding-left: 5px;
+}
+
+#myCarousel .right {
+    float: none;
+}
+
+.span5 .row h4 {
+    margin-top: 0;
+}

@@ -6,14 +6,6 @@
         Purpose of the stylesheet follows.
 */
 
-root { 
-    display: block;
-}
-
-.span12 {
-    background-color: white;
-    width: 976px;  
-}
 
 .margin_left_zero{
     margin-left: 0px

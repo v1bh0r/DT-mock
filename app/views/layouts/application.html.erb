@@ -21,7 +21,7 @@
 
 
       <div class="navbar navbar-inverse">
-        <div class="navbar-inner" style="border-radius: 0;">
+        <div class="navbar-inner">
           <div class="container" style="width: 995px;">
             <ul class="nav">
               <li class="active"><%= link_to "Home", "/home/index" %></li>
@@ -54,18 +54,24 @@
         </div>
       </div>
     <% else %>
-      <div class="logo"> 
+     <div class="logo" style="height: 30px"> 
         <div class="container">
           <a href="/home">
             <img alt="Logo" src="/assets/main_logo.png"/>
           </a>  
-          <span class="pull-right">
-            <ul style="list-style: none;margin-top: 10px">
-               <li style="display: inline"><a>Signup</a></li>
+          <span class="pull-right" style="margin-right: 20px;margin-top: -5px;">
+            <ul style="list-style: none;">
+              <li style="display: inline"><a>Sign up</a></li>
               <li style="display: inline;padding-left: 10px;"><a>Login</a></li>             
             </ul>
           </span>
         </div>
+      </div>
+
+      <div  style="background-color: #e5e6e7">
+        <div class="container">    
+          <img alt="Logo" src="/assets/main_logo_ref.png"/>
+        </div>            
       </div>
   <% end %>
     <div class="container">
@@ -84,7 +90,7 @@
           <li><%= link_to "Contact Us", ""  %><span>|</span></li>
           <li><%= link_to "Jobs", ""  %><span>|</span></li>
           <br><br>
-          <li style="color: #98999B">DEALtraction &copy; 2012<span>|</span></li>
+          <li class="container_title" >DEALtraction &copy; 2012<span>|</span></li>
           <li><%= link_to "User Agreement", ""  %><span>|</span></li>
           <li><%= link_to "Privacy Policy", ""  %><span>|</span></li>
           <li><%= link_to "Copyright Policy", ""  %><span>|</span></li>

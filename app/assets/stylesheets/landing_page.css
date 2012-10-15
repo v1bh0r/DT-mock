@@ -1,51 +1,135 @@
-/* 
-    Document   : landing_page
-    Created on : 12 Oct, 2012, 6:07:28 PM
-    Author     : aastha
-    Description:
-        Purpose of the stylesheet follows.
-*/
-
-root { 
-    display: block;
+.carousel, .carousel-inner .item {
+    height:320px;
 }
-
-.carousel, .carousel-inner .item {height:323px}
 
 #myCarousel {
     margin-top: 20px;
-    width:320px;
+    width:380px;
 }
-.carousel-caption h4{color:white; font-size: 16px !important;}
+.carousel-caption h4{
+    color:white;
+    font-size: 16px !important;
+}
+
 .carousel-caption p {
     margin-bottom: 0;
 }
-.carousel-caption p a {display:none;}
+
+.carousel-caption p a {
+    display:none;
+}
+
 #carousel-nav {
     text-align: center;
     border-bottom: none;
     position:absolute;
-    top:75px
+    top: 80px;
+    margin-left: 5px;
+    width: 65px;
 }
+
 #carousel-nav a {
     margin: 5px 0px;
-    background: #eee;
-    color: #000;
     display: inline-block;
     width: 16px;
     height: 16px;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+    background-image: url("/assets/white_dot.png");
+    background-repeat:no-repeat
 }
+
 #carousel-nav a.active {
-    background: #8ac43e;
-    color: black;
+    background-image: url("/assets/green_dot.png");
+    background-repeat:no-repeat
 }
+
 .right,
 .alignright {
     float: right;
     padding-left: 5px;
 }
+
 #myCarousel .right {
     float: none;
+}
+
+.span5 .row h4 {
+    margin-top: 0;
+}
+.span6 {
+    color: #8C8D8F;
+}
+.span6 h2 {
+    padding-left: 0;
+}
+.border_top {
+    border-top: 1px solid lightgrey;
+    margin-top: 12px;
+}
+.border_top p {
+    color: black;
+    font-size: 9px;
+}
+.carousel-caption {
+    height: 64px;
+}
+.image1 {
+    background-image: url('/assets/image1.png');
+    background-repeat:no-repeat;
+}
+.image2 {
+    background-image: url('/assets/image2.png');
+    background-repeat:no-repeat;
+}
+.image3 {
+    background-image: url('/assets/image3.png');
+    background-repeat:no-repeat;
+}
+.border_bottom_thin {
+    border-bottom: 1px solid lightgrey;
+}
+.page_nav_item {
+    text-align: center;
+    margin-left: 0px;
+}
+.text_grey {
+    color: #8C8D8F;
+}
+.basic_info_header .dt_arrow_up {
+    padding-top: 20px
+}
+.basic_info_header .dt_info_title {
+    margin-left: -40px;
+    color: #1b75bb
+}
+
+.info_detail{
+    width: 450px;
+    padding-left: 20px
+}
+
+.info_detail h3,.info_sample_image h3 {
+    color: #424344;
+    margin-top: -7px
+}
+
+.info_detail .span1{
+    margin-left: 0
+}
+.info_detail .span4{
+    margin-left: 0;
+    margin-bottom: 20px;
+    width: 375px;
+    margin-top: -5px;
+}
+
+.info_sample_image{
+    width: 450px
+}
+
+.info_sample_image small{
+    color: #424344
+}
+
+.free_till {
+    margin-top: 5px;margin-bottom: 0;
 }

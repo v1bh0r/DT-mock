@@ -8,91 +8,71 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag "application", :media => "all" %>
   </head>
+  <body style="overflow: scroll">
+    <div class="logo">
+      <div  style="">
+        <a href="">
+          <img alt="Logo" src="/assets/main_logo.png" style="margin-top: 10px"/>
+        </a> 
+      </div>
+    </div>
 
-  <body>
-    <%unless on_page?("home","landing_page") %>
-      <div class="logo"> 
-        <div class="container">
-          <a href="/home">
-            <img alt="Logo" src="/assets/main_logo.png"/>
-          </a>  
+    <div class="navbar">
+      <div class="container nav_top"  style="-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;">
+        <div style="">
+          <ul class="nav">
+            <li><%= link_to "Home", "/home/index" %></li>
+            <li><%= link_to "Reminders", "/home/index"  %></li>
+            <li><%= link_to "Filters", "/home/index"  %></li>
+            <li><%= link_to "Network", "/home/index"  %></li>
+            <li><%= link_to "Profile", "/home/index"  %></li>
+          </ul>
+          <ul class="nav pull-right" >
+            <li class="dropdown" >
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#" style="color: white !important;">
+                <b class="caret"style="color: white"></b>&nbsp;
+                Aastha Tangri
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" style="text-decoration: none;list-style: none;color: white !important;">Add Connection</a>
+            </li>    
+          </ul>
         </div>
       </div>
-
-
-      <div class="navbar navbar-inverse">
-        <div class="navbar-inner" style="border-radius: 0;">
-          <div class="container" style="width: 995px;">
-            <ul class="nav">
-              <li class="active"><%= link_to "Home", "/home/index" %></li>
-              <li>
-                <%= link_to "/home/reminder" do  %>
-                  Reminders
-                  <span class="reminder-count">20</span>
-                <%end%>
-              </li>
-              <li><%= link_to "Filters", "/home/filter"  %></li>
-              <li><%= link_to "Network", "/home/index"  %></li>
-              <li><%= link_to "Profile", "/home/index"  %></li>
-            </ul>
-            <ul class="nav pull-right">
-              <li class="dropdown" >
-                <a data-toggle="dropdown" class="dropdown-toggle white" href="#">
-                  <b class="caret"></b>&nbsp;
-                  Aastha Tangri
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Logout</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="white">Add Connection</a>
-              </li>    
-            </ul>
-          </div>
-        </div>
-      </div>
-    <%else%>
-      <div class="logo"> 
-        <div class="container">
-          <a href="/home">
-            <img alt="Logo" src="/assets/main_logo.png"/>
-          </a>  
-          <span class="pull-right">
-            <ul style="list-style: none;margin-top: 10px">
-               <li style="display: inline"><a>Signup</a></li>
-              <li style="display: inline;padding-left: 10px;"><a>Login</a></li>             
-            </ul>
-          </span>
-        </div>
-      </div>
-
-
-    <%end%>
+    </div>
     <div class="container">
       <%= yield %>
     </div> <!-- /container -->
-    <footer>
-      <div class="container">
-        <ul>
-          <li><%= link_to "About", ""  %><span>|</span></li>
-          <li><%= link_to "News", ""  %><span>|</span></li>
-          <li><%= link_to "Blog", ""  %><span>|</span></li>
-          <li><%= link_to "Benefits", ""  %><span>|</span></li>
-          <li><%= link_to "Partner", ""  %><span>|</span></li>
-          <li><%= link_to "Developers", ""  %><span>|</span></li>
-          <li><%= link_to "Mobile", ""  %><span>|</span></li>
-          <li><%= link_to "Contact Us", ""  %><span>|</span></li>
-          <li><%= link_to "Jobs", ""  %><span>|</span></li>
-          <br><br>
-          <li style="color: #98999B">DEALtraction &copy; 2012<span>|</span></li>
-          <li><%= link_to "User Agreement", ""  %><span>|</span></li>
-          <li><%= link_to "Privacy Policy", ""  %><span>|</span></li>
-          <li><%= link_to "Copyright Policy", ""  %><span>|</span></li>
+    <footer style="margin-bottom: 0;height: 125px;width: 100%" class=" footer_gradient">
+        <ul class="breadcrumb" style="padding:50px 50px 0px 50px;background-color: none">
+          <li style="float: left;text-decoration: none"><%= link_to "About", ""  %><span style="padding-left: 20px;">|</span></li>
+          <li style="float: left;"><%= link_to "News", ""  %><span style="padding-left: 20px;">|</span></li>
+          <li style="float: left;"><%= link_to "Blog", ""  %><span style="padding-left: 20px;">|</span></li>
+          <li style="float: left;"><%= link_to "Benefits", ""  %><span style="padding-left: 20px;">|</span></li>
+          <li style="float: left;"><%= link_to "Partner", ""  %><span style="padding-left: 20px;">|</span></li>
+          <li style="float: left;"><%= link_to "Developers", ""  %><span style="padding-left: 20px;">|</span></li>
+          <li style="float: left;"><%= link_to "Mobile", ""  %><span style="padding-left: 20px;">|</span></li>
+          <li style="float: left;"><%= link_to "Contact Us", ""  %><span style="padding-left: 20px;">|</span></li>
+          <li style="float: left;"><%= link_to "Jobs", ""  %><span style="padding-left: 20px;">|</span></li>
         </ul>
-      </div>
+        <ul class="breadcrumb" style="padding:5px 50px 50px 69px">
+          <li style="float: left;color: #98999B">DEALtraction &copy; 2012<span style="padding-left: 20px;">|</span></li>
+          <li style="float: left;"><%= link_to "User Agreement", ""  %><span style="padding-left: 20px;">|</span></li>
+          <li style="float: left;"><%= link_to "Privacy Policy", ""  %><span style="padding-left: 20px;">|</span></li>
+          <li style="float: left;"><%= link_to "Copyright Policy", ""  %><span style="padding-left: 20px;">|</span></li>
+        </ul>
     </footer>
+
+
+    <!-- Javascripts
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
+
   </body>
 </html>

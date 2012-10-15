@@ -6,9 +6,6 @@
         Purpose of the stylesheet follows.
 */
 
-root { 
-    display: block;
-}
 .span9 {
     background-color: white;
     width: 698px;      
@@ -101,13 +98,11 @@ root {
 .alert_frequency .caret {
     vertical-align: middle;
 }
-
-
-
 .alert_detail {
     height: 175px;
     border-bottom:1px solid lightgray;
     margin-top: 20px;
+    position: relative;
 }
 .alert_detail .alert_time {
     padding-right: 10px;
@@ -289,4 +284,9 @@ root {
 .input-append input {
     width: auto;
 }
-
+#span1{
+    margin-left: 7px;
+}
+.top-shadow b{
+font-size: 21px;
+}

@@ -82,3 +82,28 @@ footer .container > ul > li > span {
 .input-prepend > .btn, .input-append > .btn {
     padding: 4px 10px;
 }
+.pull-right ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.pull-right ul li{
+    display: inline;
+    padding-left: 10px;
+}
+.pull-right-li{
+    display: inline;
+}
+.container_title{
+    color: #98999B;
+}
+.span12 {
+    background-color: white;
+    width: 976px; 
+}
+
+root { 
+    display: block;
+}
+.navbar-inner {
+    border-radius: 0 !important;
+}

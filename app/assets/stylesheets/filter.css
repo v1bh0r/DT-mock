@@ -5,15 +5,10 @@
     Description:
         Purpose of the stylesheet follows.
 */
-
-root { 
-    display: block;
-}
-
 .span12 {
-    background-color: white;
-    width: 976px; 
+    width: 976px;
 }
+
 .filter {
     border-bottom:1px solid lightgrey;
 }

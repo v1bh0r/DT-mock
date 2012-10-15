@@ -65,6 +65,7 @@ function share_news_alert(company_name,id){
     })  
 }
 
+
 $('.carousel').carousel({
     interval: 4000
   })
@@ -73,4 +74,23 @@ $('.carousel').carousel({
     targetSlide = $(this).attr('data-to')-1;
     $('#myCarousel').carousel(targetSlide);
     $(this).addClass('active').siblings().removeClass('active');
-  });    
+  });  
+
+
+/* AUTOPLAY NAV HIGHLIGHT */
+
+// bind 'slid' function
+$('#myCarousel').bind('slid', function() {
+
+    // remove active class
+    $('#carousel-nav .active').removeClass('active');
+
+    // get index of currently active item
+    var idx = $('#myCarousel .item.active').index();
+
+    // select currently active item and add active class
+    $('#carousel-nav a:eq(' + idx + ')').addClass('active');
+
+});
+
+
